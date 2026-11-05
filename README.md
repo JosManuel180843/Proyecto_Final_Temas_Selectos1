@@ -1,4 +1,4 @@
-# Team XX — Machine Learning Project, Part 1
+# Team 9 — Machine Learning Project, Part 1
 
 **Course:** LIS4032 Selected Topics 1 (Machine Learning), UDLAP, Fall 2026
 **Topic:** early prediction of student dropout (Dropout / Enrolled / Graduate) at the end of the first semester.
