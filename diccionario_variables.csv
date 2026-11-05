@@ -1,0 +1,39 @@
+variable,meaning,type,unit_or_values,role
+student_id,Row identifier created from the original row number,identifier,integer,id (not a predictor)
+marital_status,"Marital status at enrollment (1 single, 2 married, 3 widower, 4 divorced, 5 de facto union, 6 legally separated)","categorical (nominal, coded)",code 1-6,predictor
+application_mode,"Application mode / admission route (e.g. 1st phase general contingent, over 23 years old, transfer)","categorical (nominal, coded)",code,predictor
+application_order,Preference order of the program in the application (0 = first choice ... 9 = last),numeric (ordinal),0-9,predictor
+course,"Undergraduate program (e.g. 9500 Nursing, 9147 Management, 9119 Informatics Engineering)","categorical (nominal, coded)",code,predictor
+daytime_evening_attendance,Attendance schedule,binary,"1 daytime, 0 evening",predictor
+previous_qualification,Highest qualification obtained before enrollment,"categorical (nominal, coded)",code,predictor
+previous_qualification_grade,Grade of the previous qualification,numeric (continuous),"points, 0-200",predictor
+nationality,Nationality of the student,"categorical (nominal, coded)",code,predictor
+mothers_qualification,Mother's highest education level,"categorical (nominal, coded)",code,predictor
+fathers_qualification,Father's highest education level,"categorical (nominal, coded)",code,predictor
+mothers_occupation,Mother's occupation,"categorical (nominal, coded)",code,predictor
+fathers_occupation,Father's occupation,"categorical (nominal, coded)",code,predictor
+admission_grade,Admission grade,numeric (continuous),"points, 0-200",predictor
+displaced,Student lives away from home to study,binary,"1 yes, 0 no",predictor
+educational_special_needs,Student has educational special needs,binary,"1 yes, 0 no",predictor
+debtor,Student owes money to the institution,binary,"1 yes, 0 no",predictor
+tuition_fees_up_to_date,Tuition fees paid up to date,binary,"1 yes, 0 no",predictor
+gender,Gender,binary,"1 male, 0 female",predictor
+scholarship_holder,Student has a scholarship,binary,"1 yes, 0 no",predictor
+age_at_enrollment,Age at enrollment,numeric (discrete),years,predictor
+international,International student,binary,"1 yes, 0 no",predictor
+curricular_units_1st_sem_credited,Courses credited (recognised from previous studies) in the 1st semester,numeric (discrete),number of courses,predictor
+curricular_units_1st_sem_enrolled,Courses enrolled in the 1st semester,numeric (discrete),number of courses,predictor
+curricular_units_1st_sem_evaluations,Evaluations (exams) taken in the 1st semester,numeric (discrete),number of evaluations,predictor
+curricular_units_1st_sem_approved,Courses passed in the 1st semester,numeric (discrete),number of courses,predictor
+curricular_units_1st_sem_grade,Average grade in the 1st semester,numeric (continuous),"points, 0-20",predictor
+curricular_units_1st_sem_without_evaluations,Courses without any evaluation in the 1st semester,numeric (discrete),number of courses,predictor
+curricular_units_2nd_sem_credited,Courses credited in the 2nd semester,numeric (discrete),number of courses,excluded (known after the moment of prediction)
+curricular_units_2nd_sem_enrolled,Courses enrolled in the 2nd semester,numeric (discrete),number of courses,excluded (known after the moment of prediction)
+curricular_units_2nd_sem_evaluations,Evaluations taken in the 2nd semester,numeric (discrete),number of evaluations,excluded (known after the moment of prediction)
+curricular_units_2nd_sem_approved,Courses passed in the 2nd semester,numeric (discrete),number of courses,excluded (known after the moment of prediction)
+curricular_units_2nd_sem_grade,Average grade in the 2nd semester,numeric (continuous),"points, 0-20",excluded (known after the moment of prediction)
+curricular_units_2nd_sem_without_evaluations,Courses without evaluation in the 2nd semester,numeric (discrete),number of courses,excluded (known after the moment of prediction)
+unemployment_rate,National unemployment rate in the year of enrollment,numeric (continuous),%,predictor
+inflation_rate,National inflation rate in the year of enrollment,numeric (continuous),%,predictor
+gdp,National GDP growth in the year of enrollment,numeric (continuous),% change,predictor
+target,Academic status at the end of the normal duration of the program,categorical (target),Dropout / Enrolled / Graduate,target
