@@ -37,7 +37,7 @@ EquipoXX_Parte1/
 ## Execution
 
 ```bash
-jupyter notebook EquipoXX_Parte1.ipynb      # then Kernel > Restart & Run All
+jupyter notebook Equipo9_Parte1.ipynb      # then Kernel > Restart & Run All
 # or, without opening it:
 jupyter nbconvert --to notebook --execute --inplace EquipoXX_Parte1.ipynb
 ```
