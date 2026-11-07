@@ -39,7 +39,7 @@ EquipoXX_Parte1/
 ```bash
 jupyter notebook Equipo9_Parte1.ipynb      # then Kernel > Restart & Run All
 # or, without opening it:
-jupyter nbconvert --to notebook --execute --inplace EquipoXX_Parte1.ipynb
+jupyter nbconvert --to notebook --execute --inplace Equipo9_Parte1.ipynb
 ```
 
 All paths are relative: run the notebook from this folder. The notebook regenerates
